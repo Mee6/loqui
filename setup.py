@@ -14,7 +14,7 @@ except ImportError:
 extensions = []
 for file in glob.glob('py/loqui/*.%s' % ext):
     package = os.path.splitext(os.path.basename(file))[0]
-    print package
+    print(package)
     extensions.append(Extension(
         'loqui.%s' % package,
         [file],
